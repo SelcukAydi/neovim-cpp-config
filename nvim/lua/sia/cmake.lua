@@ -10,6 +10,6 @@ end
 
 cmake.setup({
 copy_compile_commands = false,
-build_dir = tostring(path:new('{cwd}', 'build')),
+build_dir = tostring(path:new( 'build')),
 configure_args = { '-D', 'CMAKE_EXPORT_COMPILE_COMMANDS=1' },
 })

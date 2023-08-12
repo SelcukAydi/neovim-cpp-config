@@ -94,7 +94,10 @@ return packer.startup(function(use)
 -- Cmake
   use { "Shatur/neovim-cmake" }
 
-  -- Automatically set up your configuration after cloning packer.nvim
+-- Telecope
+	use { "nvim-telescope/telescope.nvim" }
+  
+    -- Automatically set up your configuration after cloning packer.nvim
 -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
